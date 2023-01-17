@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    top: 30px;
+    height: 840px;
+    width: 390px;
+    margin: auto;
+    border: 1px solid black;
+    position: relative;
+}
+/*---------------------------------------------------------------------------------------------------*/
+.header{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin: 5px 0px;
+}
+.h-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.l-icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.l-icon p , i{
+    margin: 0 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.l-icon p{
+    font-weight: bold;
+}
+.r-icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.r-icon i{
+    border-radius: 100%;
+    background-color: rgb(197, 210, 211);
+    padding: 5px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+.content{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 760px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 5px 0px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-l{
+    margin: 0px 0px;
+}
+.img-l img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: black;
+    cursor: pointer;
+}
+.input-text input{
+    width: 280px;
+    height: 30px;
+    border: none;
+    padding: 10px;
+}
+.input input:focus{
+    outline: none;
+    border: none;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*story*/
+.story{
+    overflow-x: scroll;
+}
+.story{
+    width: 100%;
+    display: flex;
+    margin: 5px;
+}
+.story-card{
+    display: block;
+    cursor: pointer;
+    height: 260px;
+    min-width: 180px;
+    border: 1px solid rgb(117, 113, 113);
+    border-radius: 10px;
+    margin: 5px;
+}
+.img-story{
+    text-align: center;
+}
+.img-story i{
+    background-color: blue;
+    border-radius: 100%;
+    color: white;
+    padding: 2px;
+}
+.img-story img{
+    height: 200px;
+    width: 100%;
+    background-color: skyblue;
+    border-radius: 10px 10px 0 0;
+}
+/*story friend*/
+.story-card-friend{
+    display: block;
+    cursor: pointer;
+    height: 260px;
+    min-width: 180px;
+    border: 1px solid rgb(117, 113, 113);
+    border-radius: 10px;
+    margin: 5px;
+}
+.img-story-friend{
+    position: relative;
+    display: flex;
+}
+.h-s-f{
+    position: absolute;
+    margin: 10px 0px;
+    color: white;
+}
+.f-s-f{
+    position: absolute;
+    margin: 0px 10px;
+    top: 230px;
+    font-weight: bold;
+    color: black;
+}
+.img-story-friend img{
+    height: 260px;
+    width: 100%;
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*posts*/
+.posts{
+    width: 100%;
+    margin: 10px 0px;
+}
+.post-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-img-name{
+    display: flex;
+    align-items: center;
+}
+.p-img-name i, p{
+    margin: 0px 5px;
+}
+.p-img-name img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: pink;
+}
+.icon-x{
+    display: flex;
+    align-items: center;
+}
+.icon-x i{
+    font-size: 12px;
+}
+.p-content{
+    text-align: justify;
+    margin: 10px 0;
+    padding: 10px 0;
+    border: 1px solid rgb(199, 195, 195);
+}
+.p-content img{
+    width: 100%;
+}
+.f-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(199, 195, 195);
+    border-top: 1px solid rgb(199, 195, 195);
+    margin: 10px 0px;
+}
+.f-post i{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    margin: 0px 0px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer i{
+    cursor: pointer;
+    color: rgb(66, 56, 56);
+}
+.footer i:hover{
+    border-top: 4px solid black;
+}
+/*---------------------------------------------------------------------------------------------------*/
+.solid{
+    border: 3px solid rgb(199, 192, 192);
+    margin: 5px 0px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+#active{
+    border-top: 4px solid black;
+}
